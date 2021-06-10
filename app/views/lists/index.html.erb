@@ -1,10 +1,25 @@
-<div class="container">
-  <h1>Here are all your lists</h1>
-  <ul>
-    <% @lists.each do |list| %>
-    <li> <%= link_to list.name, list_path(list) %></li>
-    <% end %>
-  </ul>
+<div class="banner-lists" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1575811890102-9f4bb50aa598?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);">
+  <div class="container text-center">
+    <h1>Save any kind of movies</h1>
+  </div>
+</div>
 
-  <%= link_to "Create a list", new_list_path %>
+<div class="container">
+  <h1 class="text-center my-3">My lists</h1>
+
+  <div class="row my-4">
+    <% @lists.each do |list| %>
+    <div class="col-sm-4">
+      <div class="card my-2">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://picsum.photos/200/300?grayscale)">
+        <div class="card-body">
+          <p class="card-text"><%= link_to list.name, list_path(list) %></p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <p class="text-center"><%= link_to "Create a list", new_list_path, class:"btn btn-primary" %></p>
 </div>
