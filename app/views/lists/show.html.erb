@@ -15,10 +15,11 @@
           <p class="card-title"><strong><%= bookmark.movie.title %></strong></p>
           <p class="card-text"><%= bookmark.movie.overview %></p>
           <p class="card-text">-<em><%= bookmark.comment %></em></p>
-          <%= link_to "Remove",
+          <p> <%= link_to "",
                       bookmark_path(bookmark),
+                      class: "far fa-trash-alt",
                       method: :delete,
-                      data: { confirm: "Are you sure?" } %>
+                      data: { confirm: "Are you sure?" } %></p>
         </div>
       </div>
     </div>
