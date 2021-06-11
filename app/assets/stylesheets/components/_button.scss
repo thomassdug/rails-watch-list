@@ -13,3 +13,46 @@
   color: white;
   text-decoration: none;
 }
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.back-button {
+  color: #4A4A4A;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.back-button:hover {
+  color: black;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.fa-trash-alt {
+  color: #4A4A4A;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  position:absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.fa-trash-alt:hover {
+  color: black;
+  opacity: 1;
+  text-decoration: none;
+}

@@ -1,6 +1,6 @@
-<div class="banner-lists" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1575811890102-9f4bb50aa598?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);">
+<div class="banner-lists" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1585951237313-1979e4df7385?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);">
   <div class="container text-center">
-    <h1>Save any kind of movies</h1>
+    <h1>Save all your favorite movies !</h1>
     <p>
       <span id="banner-typed-text"></span>
     </p>
@@ -9,7 +9,7 @@
 
 <div class="container">
   <h1 class="text-center my-3">My lists</h1>
-
+  <p class="text-center my-3">Here <em><mark>all the lists</mark></em> added by you !</p>
   <div class="row my-4">
     <% @lists.each do |list| %>
     <div class="col-sm-4">
@@ -28,5 +28,5 @@
     <% end %>
   </div>
 
-  <p class="text-center"><%= link_to "Create a list", new_list_path, class:"btn btn-primary" %></p>
+  <p class="text-center"><%= link_to "Create a list", new_list_path, class:"btn btn-ghost" %></p>
 </div>
